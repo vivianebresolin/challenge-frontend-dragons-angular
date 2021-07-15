@@ -1,10 +1,20 @@
 .header {
   display: flex;
   justify-content: space-between;
-  height: 10vh;
+  height: 9vh;
+
+  a {
+    text-decoration: none;
+
+    &:active,
+    &:visited {
+      color: white;
+    }
+  }
 
   h1 {
     font-size: 1.65rem;
+    font-weight: bold;
   }
 
   button {
