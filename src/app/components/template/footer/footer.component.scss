@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+
+  i {
+    vertical-align: middle;
+
+    &.heart {
+      color: red;
+      font-size: 1.3rem;
+    }
+
+    &.coffee {
+      color: coral;
+    }
+  }
+
+  img {
+    height: 1.47rem;
+    transform: translateY(-8%);
+  }
+}
