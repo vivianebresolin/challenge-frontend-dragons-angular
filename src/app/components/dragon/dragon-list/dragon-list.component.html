@@ -1,0 +1,23 @@
+<mat-grid-list *ngIf="show" class="dragon-list" cols="4" rowHeight="4:1.5" gutterSize="0.4rem">
+  <mat-grid-tile *ngFor="let dragon of dragons">
+    <mat-card class="dragon-card">
+      <img mat-card-image>
+      <mat-card-title>{{ dragon.name }}</mat-card-title>
+
+      <div class="buttons">
+        <button>
+          <a routerLink="dragon/{{ dragon.id }}">
+            <i class="material-icons details">
+              info
+            </i>
+          </a>
+        </button>
+        <button (click)="deleteDragon(dragon)">
+          <i class="material-icons delete">
+            delete
+          </i>
+        </button>
+      </div>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
