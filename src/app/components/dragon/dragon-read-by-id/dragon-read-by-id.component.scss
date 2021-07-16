@@ -1,0 +1,40 @@
+.info-container {
+  max-width: 360px;
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+
+  .dragon-info {
+    text-align: center;
+
+    h3 {
+      margin: 0.4rem 0 0.25rem;
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 1.15rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+img {
+  height: 12rem;
+  width: 12rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.button-edit {
+  margin: 0 0.3rem;
+
+  a {
+    color: black;
+  }
+}

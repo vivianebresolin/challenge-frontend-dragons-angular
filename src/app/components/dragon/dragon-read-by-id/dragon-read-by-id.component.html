@@ -1,0 +1,30 @@
+<mat-card class="info-container">
+  <mat-card-title>
+    <h1>Informações sobre o dragão:</h1>
+  </mat-card-title>
+
+  <img src="../../../../assets/images/dragon_face.jpg">
+
+  <div class="dragon-info">
+    <h3>Nome:</h3>
+    <p>{{dragon.name}}</p>
+    <h3>Tipo:</h3>
+    <p>{{dragon.type}}</p>
+    <h3>Histórias:</h3>
+    <p>{{dragon.histories}}</p>
+    <h3>Data de criação:</h3>
+    <p>{{dragon.createdAt}}</p>
+  </div>
+
+  <div>
+    <button class="button-cancel" mat-flat-button color="primary">
+      <a routerLink="/">Voltar</a>
+    </button>
+    <button mat-flat-button color="accent" class="button-edit">
+      <a routerLink="/dragon/update/{{dragon.id}}">Editar</a>
+    </button>
+    <button class="button-cancel" mat-flat-button color="warn" (click)="deleteDragon(dragon.id!)">
+      Excluir
+    </button>
+  </div>
+</mat-card>
