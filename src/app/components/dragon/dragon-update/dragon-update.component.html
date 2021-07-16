@@ -1,0 +1,29 @@
+<mat-card class="form-container">
+  <mat-card-title>
+    <h1>Atualize aqui os dados do dragão:</h1>
+  </mat-card-title>
+  <form class="form-content">
+    <mat-form-field appearance="outline">
+      <mat-label>Nome</mat-label>
+      <input matInput placeholder="Nome" name="name" [(ngModel)]="dragon.name" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Tipo</mat-label>
+      <input matInput placeholder="Tipo" name="type" [(ngModel)]="dragon.type" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Histórias</mat-label>
+      <textarea rows="2" matInput placeholder="Histórias" name="histories" [(ngModel)]="dragon.histories"
+        required></textarea>
+    </mat-form-field>
+  </form>
+
+  <div>
+    <button mat-flat-button color="accent">
+      Atualizar
+    </button>
+    <button class="button-cancel" mat-flat-button color="primary" (click)="cancelUpdateDragon()">
+      Cancelar
+    </button>
+  </div>
+</mat-card>
