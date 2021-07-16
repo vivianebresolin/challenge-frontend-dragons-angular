@@ -1,11 +1,10 @@
 .info-container {
   max-width: 360px;
-  padding: 2rem 3rem;
+  padding: 1rem 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2rem auto;
   background-color: rgba(0, 0, 0, 0.75);
 
   .dragon-info {
@@ -19,14 +18,14 @@
 
     p {
       font-size: 1.15rem;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.25rem;
     }
   }
 }
 
 img {
-  height: 12rem;
-  width: 12rem;
+  height: 10rem;
+  width: 10rem;
   object-fit: cover;
   border-radius: 50%;
   margin-bottom: 0.5rem;

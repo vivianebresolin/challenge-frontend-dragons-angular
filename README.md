@@ -1,27 +1,78 @@
-# DesafioSicrediDragonsAngular
+# Desafio de Frontend em Angular - Dragons
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
+<br />
 
-## Development server
+<div align="center">
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+  ![Angular](https://img.shields.io/badge/-Angular-black?style=flat-square&logo=angular)
+  ![Typescript](https://img.shields.io/badge/-Typescript-black?style=flat-square&logo=typescript)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+</div>
 
-## Build
+<br />
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Esta é uma aplicação frontend, com consumo de uma API, desenvolvida com base nas orientações constantes neste link: [Teste para Desenvolvedor(a) Web](https://github.com/WoopSicredi/jobs/issues/6/).
 
-## Running unit tests
+<br />
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## :hammer_and_wrench: Funcionalidades:
 
-## Running end-to-end tests
+- Página principal com listagem dos dragões;
+- Visualização de todas as informações de um dragão específico escolhido pelo usuário;
+- Cadastro de um novo dragão;
+- Possibilidade de editar um dragão;
+- Possibilidade de excluir um dragão.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<br />
 
-## Further help
+## :man_technologist: Imagens da Aplicação
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<div align="center">
+
+### Homepage
+
+<img src="src/assets/images/github/home.png" width="100%"/>
+
+<br />
+
+### Cadastro de um dragão
+
+<img src="src/assets/images/github/create-dragon.png" width="100%"/>
+
+<br />
+
+### Informações do dragão
+
+<img src="src/assets/images/github/read-dragon.png" width="100%"/>
+
+<br />
+
+### Atualização de um dragão
+
+<img src="src/assets/images/github/update-dragon.png" width="100%"/>
+
+<br />
+
+</div>
+
+<br />
+
+## :nerd_face: Como rodar esse projeto no seu computador:
+
+Após efetuar o download ou o clone do projeto, e estando dentro da pasta raiz, realizar os seguinte comando no terminal:
+
+### `ng serve`
+
+<p> Esse comando irá executar a aplicação em modo de desenvolvimento. </p>
+Abra http://localhost:4200 para ver a aplicação funcionando no seu browser.
+
+<br/> 
+
+<div align="center">
+<br/> 
+<br/> 
+
+Made with 🧡 and :coffee: | Find me on <a href="https://www.linkedin.com/in/vivianebresolin/"> LinkedIn</a>
+
+</div>
