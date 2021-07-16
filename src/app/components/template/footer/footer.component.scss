@@ -1,19 +1,24 @@
 .footer {
+  position: fixed;
+  bottom: 0;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10vh;
+  height: 8vh;
+  font-size: 1rem;
 
   i {
     vertical-align: middle;
 
     &.heart {
       color: red;
-      font-size: 1.3rem;
+      font-size: 1.15rem;
     }
 
     &.coffee {
       color: coral;
+      font-size: 1.15rem;
     }
   }
 

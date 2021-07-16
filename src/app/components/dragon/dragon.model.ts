@@ -3,7 +3,7 @@ export interface Dragon {
   name: string;
   type: string;
   histories: string;
-  createdAt: string;
+  createdAt: Date;
   dateFormatted?: string
-  updatedAt?: string
+  updatedAt?: Date
 }

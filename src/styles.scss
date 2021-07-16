@@ -7,6 +7,31 @@ html {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  height: 100vh;
+  background-image: url(../src/assets/images/bg-dragons.jpg);
+  background-position: center;
+  object-fit: cover;
+}
+
+app-dragon-create,
+app-home {
   width: 100vw;
+  height: 83vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+
+  &.active,
+  &.visited {
+    color: #fff;
+  }
 }

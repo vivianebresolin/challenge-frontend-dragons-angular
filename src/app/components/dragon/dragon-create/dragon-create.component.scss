@@ -1,0 +1,35 @@
+.form-container {
+  max-width: 360px;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.65);
+
+  h1 {
+    font-size: 1.65rem;
+    font-weight: 500;
+  }
+}
+
+.form-content {
+  margin: 1rem 0 2.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  input::placeholder {
+    color: white !important;
+  }
+}
+
+button {
+  width: 6rem;
+
+  &.button-cancel {
+    margin-left: 0.5rem;
+    background-color: #1980f7f8;
+  }
+}

@@ -1,5 +1,29 @@
-<p>dragon-create works!</p>
+<mat-card class="form-container">
+  <mat-card-title>
+    <h1>Cadastre aqui seu dragão:</h1>
+  </mat-card-title>
+  <form class="form-content">
+    <mat-form-field appearance="outline">
+      <mat-label>Nome</mat-label>
+      <input matInput placeholder="Nome" name="name" [(ngModel)]="newDragon.name" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Tipo</mat-label>
+      <input matInput placeholder="Tipo" name="type" [(ngModel)]="newDragon.type" required>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Histórias</mat-label>
+      <textarea rows="2" matInput placeholder="Histórias" name="histories" [(ngModel)]="newDragon.histories"
+        required></textarea>
+    </mat-form-field>
+  </form>
 
-<button mat-flat-button color="primary" (click)="createDragon()">
-  Salvar
-</button>
+  <div>
+    <button mat-flat-button color="accent" (click)="createDragon()">
+      Salvar
+    </button>
+    <button class="button-cancel" mat-flat-button color="primary" (click)="cancelCreateDragon()">
+      Cancelar
+    </button>
+  </div>
+</mat-card>

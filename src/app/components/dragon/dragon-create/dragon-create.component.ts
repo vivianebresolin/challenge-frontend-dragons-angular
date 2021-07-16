@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Dragon } from '../dragon.model';
 import { DragonService } from '../dragon.service';
 
 @Component({
@@ -8,14 +10,27 @@ import { DragonService } from '../dragon.service';
 })
 export class DragonCreateComponent implements OnInit {
 
-  constructor(private dragonService: DragonService) { }
+  newDragon: Dragon = {
+    name: "",
+    type: "",
+    histories: "",
+    createdAt: new Date()
+  }
+
+  constructor(private dragonService: DragonService, private router: Router) { }
 
   ngOnInit(): void {
 
   }
 
   createDragon(): void {
-    this.dragonService.showPopUpMessage('Teste!');
+    this.dragonService.create(this.newDragon).subscribe(() => {
+      this.dragonService.showPopUpMessage('Dragão cadastrado com sucesso!');
+      this.router.navigate(['/']);
+    });
   }
 
+  cancelCreateDragon(): void {
+    this.router.navigate(['/']);
+  }
 }
