@@ -9,36 +9,26 @@ import { DragonService } from '../dragon.service';
 })
 export class DragonListComponent implements OnInit {
 
-  dragons: Dragon[]
-  dragon: Dragon
-  show: boolean
+  dragons: Dragon[];
 
   constructor(private dragonService: DragonService) { }
 
   ngOnInit(): void {
-    this.dragonService.read().subscribe(dragons => {
-      this.dragons = dragons;
-      this.show = true;
-    });
+    this.getDragons();
   }
 
-  updateListInScreen() {
-    setTimeout(() => {
-      this.show = false
-    }, 800);
-
-    setTimeout(() => {
-      this.show = true
-      this.dragonService.read().subscribe(dragons => {
-        this.dragons = dragons;
-      })
-    }, 1000);
+  getDragons() {
+    this.dragonService
+      .read()
+      .subscribe(dragons => this.dragons = dragons);
   }
 
   deleteDragon(dragon: Dragon): void {
-    this.dragonService.delete(dragon.id!).subscribe(() => {
-      this.dragonService.showPopUpMessage('Dragão deletado com sucesso!');
+    this.dragonService
+      .delete(dragon.id!)
+      .subscribe(() => {
+        this.dragonService.showPopUpMessage('Dragão deletado com sucesso!');
+        this.getDragons();
     });
-    this.updateListInScreen();
   }
 }
