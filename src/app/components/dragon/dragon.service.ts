@@ -2,7 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 import { Dragon } from './dragon.model';
+import { sortDragonsByName } from '../../../utils/sort-dragons-by-name';
 
 @Injectable({
   providedIn: 'root'
@@ -26,7 +28,13 @@ export class DragonService {
   }
 
   read(): Observable<Dragon[]> {
-    return this.http.get<Dragon[]>(this.apiBaseUrl);
+    return this.http
+      .get<Dragon[]>(this.apiBaseUrl)
+      .pipe(
+        map((dragons) => 
+          dragons.sort((dragonA, dragonB) => sortDragonsByName(dragonA, dragonB))
+        )
+      );
   }
 
   readById(id: string): Observable<Dragon> {
