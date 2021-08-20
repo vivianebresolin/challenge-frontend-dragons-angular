@@ -60,12 +60,15 @@ Esta é uma aplicação frontend, com consumo de uma API, desenvolvida com base 
 
 ## :nerd_face: Como rodar esse projeto no seu computador:
 
-Após efetuar o download ou o clone do projeto, e estando dentro da pasta raiz, realizar os seguinte comando no terminal:
+Após efetuar o download ou o clone do projeto, e estando dentro da pasta raiz, realizar os seguintes comandos no terminal:
 
-### `ng serve`
+### `npm install`
+<p> Esse comando irá instalar todas as dependências necessárias para o projeto funcionar. </p>
+
+### `npm start`
 
 <p> Esse comando irá executar a aplicação em modo de desenvolvimento. </p>
-Abra http://localhost:4200 para ver a aplicação funcionando no seu browser.
+Abra http://localhost:4200 para ver a aplicação no seu browser.
 
 <br/> 
 
