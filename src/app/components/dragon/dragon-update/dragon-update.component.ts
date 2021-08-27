@@ -21,11 +21,9 @@ export class DragonUpdateComponent implements OnInit {
     });
   }
 
-  deleteDragon(dragon: Dragon): void {
-    this.dragonService.delete(dragon.id!).subscribe(() => {
-      this.dragonService.showPopUpMessage('Dragão deletado com sucesso!');
-    });
-    this.router.navigate(['/']);
+  updateDragon(): void {
+    // TODO: implementar
+    console.log('Implementar Update Dragon');
   }
 
   cancelUpdateDragon(): void {
